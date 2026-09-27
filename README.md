@@ -19,6 +19,18 @@ Tu dis **« explique-moi »**, et Claude transforme ce qu'il vient de faire en u
 
 Rien ne se déclenche tout seul : pas de fiche ni de dessin sans demande.
 
+## Exemple
+
+Une vraie fiche produite par le skill, sur le skill lui-même : « explique-moi ce que fait explique-moi-claude, de A à Z ».
+
+[![Aperçu de la fiche d'exemple](examples/fiche-recap/apercu.png)](examples/fiche-recap/cahier/fiches/2026-09-27-2240-explique-moi-claude-de-a-a-z.html)
+
+- La fiche complète : [`examples/fiche-recap/cahier/fiches/2026-09-27-2240-explique-moi-claude-de-a-a-z.html`](examples/fiche-recap/cahier/fiches/2026-09-27-2240-explique-moi-claude-de-a-a-z.html)
+- Le cahier qui va avec : le [sommaire](examples/fiche-recap/cahier/index.html) et le [lexique](examples/fiche-recap/cahier/lexique.html)
+- Ce que Claude écrit avant la mise en page : [`fiche.json`](examples/fiche-recap/fiche.json), et le [dessin](examples/fiche-recap/dessin.png)
+
+GitHub montre le code des pages HTML au lieu de les afficher. Pour voir la fiche en vrai, ouvre-la sur GitHub, clique sur « Download raw file », puis ouvre le fichier dans ton navigateur : il contient déjà son dessin.
+
 ## Installation
 
 ### La plus simple : demande à ton IA
@@ -94,7 +106,8 @@ DESSIN.md             le mode d'emploi du dessin (pour la fiche, ou seul avec «
 scripts/fiche.py      crée la fiche, le sommaire et le lexique
 scripts/dessin.py     génère le dessin (Cloudflare) et pose les étiquettes
 fonts/                la police Caveat des étiquettes
-examples/             une fiche d'exemple (JSON) et un dessin
+examples/             fiche-recap/ : une fiche complète (JSON, dessin, cahier généré, aperçu) ;
+                      fiche-exemple.json + dessin-exemple.png : un exemple plus court
 config.example.json   modèle du fichier de réglages
 ```
 

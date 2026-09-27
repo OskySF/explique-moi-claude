@@ -1,0 +1,75 @@
+{
+  "titre": "explique-moi-claude, de A à Z",
+  "projet": "explique-moi-claude",
+  "phrase": "Tu as installé un skill qui transforme, sur simple demande, ce que Claude vient de faire en fiche de cours illustrée, rangée dans ton cahier avec un sommaire et un lexique.",
+  "illustration": "dessin.png",
+  "legende": "Xiaohei tourne la presse : ton travail en vrac entre, une fiche illustrée sort et part dans ton cahier",
+  "image": [
+    "Imagine un artisan qui refait l'électricité chez toi. Il travaille vite, il parle un jargon que tu ne comprends pas, et quand il part, il te reste des câbles neufs et aucune idée de ce qui a changé. C'est souvent ce qui se passe après une séance avec Claude : le travail est fait, mais l'explication s'est perdue dans la conversation.",
+    "explique-moi-claude, c'est une **vieille presse à imprimer** posée dans un coin de l'atelier. Quand tu dis « explique-moi », Xiaohei tourne la manivelle : tout le travail en vrac (fichiers modifiés, commandes lancées, mots techniques) entre par le haut, et il en ressort **une seule feuille propre** : une phrase simple, un dessin, une métaphore, la liste de ce qui a changé, ce que tu dois faire, les risques et un petit dictionnaire.",
+    "La feuille ne reste pas sur l'établi : elle part dans **ton classeur**, ton cahier. Chaque nouvelle fiche s'ajoute au **sommaire** (la table des matières) et ses mots techniques rejoignent le **lexique** (le dictionnaire de tout ce que tu as appris). Au bout de quelques semaines, tu as ton propre cours, écrit à partir de ton vrai travail.",
+    "La presse ne tourne jamais toute seule : pas de fiche tant que tu ne l'as pas demandée. Et pour les dessins, elle fait appel à une imprimerie du quartier, Cloudflare, avec ta propre clé, gratuitement jusqu'à une soixantaine de dessins par jour."
+  ],
+  "changements": [
+    {"avant": "Les explications de Claude restaient dans la conversation et disparaissaient avec elle.", "apres": "Chaque « explique-moi » produit une page HTML à part, que tu peux rouvrir, envoyer ou imprimer.", "pourquoi": "Une conversation se referme ; une fiche se relit des mois plus tard."},
+    {"avant": "Le dossier `~/.claude/skills/explique-moi-claude` n'existait pas.", "apres": "Il contient le skill copié depuis GitHub : `SKILL.md` (les consignes pour Claude), `DESSIN.md` (le mode d'emploi du dessin), deux scripts Python (`fiche.py` et `dessin.py`), une police manuscrite et des exemples.", "pourquoi": "Claude Code lit les skills rangés dans ce dossier et en fait la commande `/explique-moi-claude`."},
+    {"avant": "Aucun réglage.", "apres": "Un fichier `config.json` dans le dossier du skill, avec `dossier_cours` (où ranger ton cahier), `cloudflare.account_id` et `cloudflare.api_token`.", "pourquoi": "Le skill doit savoir où écrire, et avoir le droit de dessiner avec ton compte Cloudflare. Tu remplis ce fichier toi-même : la clé ne passe jamais par la conversation."},
+    {"avant": "Pas de cahier.", "apres": "Dès la première fiche, le dossier du cahier (par défaut `Documents/Explique-moi Claude`) contient `index.html` (le sommaire, avec des vignettes), `lexique.html` (tous les mots, avec une recherche), `donnees.json` (la mémoire du cahier) et le dossier `fiches/`.", "pourquoi": "Pour retrouver une fiche en deux clics et réviser les mots appris."},
+    {"avant": "Les explications étaient du texte seul.", "apres": "Chaque fiche a un dessin : Xiaohei fait l'action qui explique l'idée. L'image est dessinée par l'IA de Cloudflare, puis un script pose les étiquettes en français.", "pourquoi": "Une image se comprend en dix secondes. Et comme les mots sont écrits par du code, pas par l'IA, il n'y a aucune faute d'orthographe."},
+    {"avant": "« Dessine-moi… » ne faisait rien de spécial.", "apres": "« Dessine-moi… » produit seulement le dessin, sans fiche.", "pourquoi": "Parfois, une image suffit."}
+  ],
+  "pourquoi": [
+    "**Pourquoi un skill personnel ?** Rangé dans `~/.claude/skills/`, il donne une commande courte et simple : `/explique-moi-claude`. Le prix à payer : rien ne se met à jour tout seul, il faut récupérer les nouveautés avec `git pull`.",
+    "**Pourquoi des pages HTML ?** Elles s'ouvrent dans n'importe quel navigateur, sans logiciel en plus, et le dessin est glissé à l'intérieur de la page : une fiche marche seule, même envoyée par e-mail. Un PDF aurait été plus lourd à fabriquer, et un document Word aurait demandé Word.",
+    "**Pourquoi Cloudflare pour le dessin ?** Son offre gratuite (environ 10 000 « neurons » par jour, soit une soixantaine de dessins) suffit largement pour un usage personnel, sans carte bancaire. L'autre option, une IA d'image payante, aurait coûté quelques centimes par dessin.",
+    "**Pourquoi Claude Code uniquement ?** Le skill écrit dans ton cahier et lance Python sur ton ordinateur. claude.ai, l'onglet Chat de Claude Desktop ou Cowork n'ont pas accès à ton disque : le skill y refuse poliment de se lancer plutôt que de faire semblant.",
+    "**Pourquoi rien d'automatique ?** Une fiche prend du temps et chaque dessin consomme ton quota. Le skill attend donc que tu la demandes, même après un gros travail."
+  ],
+  "a_faire": [
+    "Vérifie que `config.json` est rempli : dossier du cahier, account ID et clé. S'il manque quelque chose, ta première fiche rouvrira le fichier dans ton éditeur de texte.",
+    "Après un travail avec Claude, dis « explique-moi » ou tape `/explique-moi-claude`. Pour un sujet précis : « explique-moi le machine learning ».",
+    "Pour retrouver tes fiches, ouvre `index.html` dans ton cahier ; pour les mots, ouvre `lexique.html`.",
+    "De temps en temps, mets le skill à jour : `git -C \"$HOME/.claude/skills/explique-moi-claude\" pull`, ou demande-le simplement à Claude.",
+    "Si la commande n'apparaît pas dans le menu `/`, tape `/reload-skills` ou redémarre Claude Code."
+  ],
+  "risques": [
+    {"risque": "Le quota gratuit de Cloudflare est épuisé : la fiche est créée sans dessin, avec la mention « Dessin indisponible ».", "probabilite": "Honnêtement, ça a très peu de chances d'arriver : il faudrait plus d'une soixantaine de dessins dans la journée. Le quota se recharge à minuit UTC (1 h ou 2 h du matin en France)."},
+    {"risque": "Cloudflare retire le modèle de dessin utilisé (FLUX.2 klein) ou change son offre gratuite : les dessins s'arrêtent, les fiches continuent.", "probabilite": "Honnêtement, c'est un vrai risque à moyen terme, parce que les modèles d'IA sont remplacés tous les quelques mois. Il suffirait alors de changer le nom du modèle dans le script."},
+    {"risque": "Ta clé Cloudflare fuit : copiée dans un message ou publiée par erreur.", "probabilite": "Honnêtement, ça a peu de chances d'arriver si tu la colles seulement dans `config.json`, que Git exclut de GitHub. Si ça arrive, révoque la clé dans Cloudflare et crée-en une autre."},
+    {"risque": "Tu déplaces ou renommes ton cahier à la main : le skill ne le trouve plus.", "probabilite": "Honnêtement, c'est un vrai risque si tu ranges souvent tes dossiers. Pas de panique : Claude te demande où il est et corrige le réglage, puis `fiche.py --index` reconstruit le sommaire."},
+    {"risque": "Tu oublies de mettre à jour le skill et gardes une ancienne version.", "probabilite": "Honnêtement, c'est probable, parce que rien ne te prévient. Ce n'est pas grave : ta version continue de marcher."},
+    {"risque": "Sans connexion internet, les fiches s'affichent avec une police ordinaire au lieu de l'écriture manuscrite.", "probabilite": "Honnêtement, ça arrivera sûrement un jour, mais c'est sans gravité : le texte et le dessin restent là."}
+  ],
+  "lexique": [
+    {"terme": "Claude Code", "definition": "La version de Claude qui travaille directement sur ton ordinateur : dans le terminal, dans VS Code ou dans l'onglet Code de Claude Desktop.", "image": "Un artisan qui vient chez toi, au lieu de te répondre au téléphone."},
+    {"terme": "terminal", "definition": "Une fenêtre où l'on tape des commandes en texte au lieu de cliquer.", "image": "Le guichet où l'on parle directement à l'ordinateur."},
+    {"terme": "VS Code", "definition": "Un logiciel gratuit pour écrire et modifier du code, dans lequel Claude Code peut s'installer.", "image": "L'établi de l'atelier."},
+    {"terme": "skill", "definition": "Un dossier de consignes et d'outils que Claude Code sait utiliser, avec sa propre commande.", "image": "Une fiche recette rangée dans la cuisine de Claude."},
+    {"terme": "commande /", "definition": "Un mot qui commence par `/` et lance une action précise dans Claude Code, comme `/explique-moi-claude`.", "image": "Un bouton d'ascenseur : tu appuies, ça part."},
+    {"terme": "/reload-skills", "definition": "La commande qui demande à Claude Code de relire les skills sans redémarrer.", "image": "Rallumer la lumière de l'atelier pour voir le nouvel outil."},
+    {"terme": "SKILL.md", "definition": "Le fichier qui dit à Claude quand se déclencher et comment fabriquer une fiche.", "image": "Le cahier des charges punaisé au-dessus de la presse."},
+    {"terme": "DESSIN.md", "definition": "Le mode d'emploi du dessin : le personnage, les étapes et les couleurs des étiquettes.", "image": "La notice de la presse à dessins."},
+    {"terme": "GitHub", "definition": "Un site qui héberge des projets de code, publics ou privés.", "image": "Une bibliothèque en ligne où chacun peut emprunter un projet."},
+    {"terme": "dépôt", "definition": "Un projet rangé avec tout son historique, ici sur GitHub.", "image": "Le classeur complet d'un projet."},
+    {"terme": "git clone", "definition": "La commande qui copie un dépôt GitHub sur ton ordinateur.", "image": "Photocopier le classeur de la bibliothèque pour l'avoir chez toi."},
+    {"terme": "git pull", "definition": "La commande qui récupère les nouveautés d'un dépôt déjà copié.", "image": "Aller chercher les nouvelles pages et les glisser dans ton classeur."},
+    {"terme": "HTML", "definition": "Le langage des pages web. Une fiche est un fichier HTML qui s'ouvre dans ton navigateur.", "image": "Une page de magazine que n'importe quel lecteur sait afficher."},
+    {"terme": "JSON", "definition": "Un format de texte rangé en cases (« titre », « phrase »…) que les programmes lisent facilement. Claude écrit la fiche en JSON avant de la mettre en page.", "image": "Un formulaire rempli case par case."},
+    {"terme": "Python", "definition": "Le langage de programmation des deux scripts du skill.", "image": "Le moteur de la presse."},
+    {"terme": "script", "definition": "Un petit programme qui fait une tâche précise : `fiche.py` met la fiche en page, `dessin.py` fait le dessin.", "image": "Un robot de cuisine réglé pour une seule recette."},
+    {"terme": "Pillow", "definition": "Une extension de Python qui sait ouvrir et modifier des images ; elle pose les étiquettes sur le dessin.", "image": "Le pinceau et les tampons de l'atelier."},
+    {"terme": "Cloudflare Workers AI", "definition": "Le service de Cloudflare qui fait tourner des IA sur ses serveurs ; ici, une IA qui dessine.", "image": "L'imprimerie du quartier qui imprime tes croquis."},
+    {"terme": "FLUX.2 klein", "definition": "Le modèle d'IA d'image utilisé pour les dessins.", "image": "L'illustrateur que l'imprimerie met à ton service."},
+    {"terme": "prompt", "definition": "La description en texte envoyée à l'IA pour lui dire quoi dessiner.", "image": "La commande passée au dessinateur."},
+    {"terme": "account ID", "definition": "L'identifiant de ton compte Cloudflare. Ce n'est pas un secret.", "image": "Ton numéro de client."},
+    {"terme": "jeton API", "definition": "Une clé secrète (`api_token`) qui autorise le skill à utiliser ton compte Cloudflare pour dessiner.", "image": "Le badge qui ouvre la porte de l'imprimerie : on ne le prête à personne."},
+    {"terme": "neurons", "definition": "L'unité de calcul de Cloudflare. L'offre gratuite en donne environ 10 000 par jour, et un dessin en coûte environ 160.", "image": "Un forfait de photocopies qui se recharge chaque nuit."},
+    {"terme": "UTC", "definition": "L'heure de référence mondiale ; la France a une ou deux heures d'avance sur elle.", "image": "L'horloge de la gare centrale sur laquelle toutes les autres se règlent."},
+    {"terme": "config.json", "definition": "Le fichier de réglages du skill : dossier du cahier et identifiants Cloudflare.", "image": "La fiche de réglages scotchée sous la presse."},
+    {"terme": "dossier_cours", "definition": "Le réglage qui dit où ranger ton cahier.", "image": "L'étagère où tu poses ton classeur."},
+    {"terme": ".gitignore", "definition": "La liste des fichiers que Git ne doit jamais envoyer sur GitHub ; `config.json` en fait partie.", "image": "Le tiroir fermé à clé que personne n'emporte."},
+    {"terme": "sommaire", "definition": "La page `index.html` du cahier : la liste de toutes tes fiches, avec une vignette de leur dessin.", "image": "La table des matières de ton classeur."},
+    {"terme": "lexique cumulé", "definition": "La page `lexique.html` : tous les mots techniques vus dans tes fiches, de A à Z, avec une recherche.", "image": "Ton répertoire de vocabulaire qui grossit à chaque cours."},
+    {"terme": "Xiaohei", "definition": "Le petit personnage noir des dessins, créé par l'illustrateur Ian ; il fait toujours l'action qui explique l'idée.", "image": "L'acteur muet de chaque fiche."}
+  ]
+}

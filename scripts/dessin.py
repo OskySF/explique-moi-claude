@@ -74,6 +74,8 @@ def gen(prompt, out, width=1344, height=768, seed=None, ref=None, config=None):
         sys.exit(f"Erreur Cloudflare {e.code}: {e.read().decode()[:500]}")
     except urllib.error.URLError as e:
         sys.exit(f"Erreur réseau : {e.reason}")
+    except OSError as e:  # connexion coupée ou délai dépassé en cours de réponse
+        sys.exit(f"Erreur réseau : {e}. Réessaie dans un instant.")
     img = (data.get("result") or {}).get("image")
     if not img:
         sys.exit("Réponse inattendue: " + json.dumps(data)[:500])
