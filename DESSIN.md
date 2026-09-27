@@ -6,7 +6,7 @@ Adapté du skill open source **ian-xiaohei-illustrations** de Ian (github.com/he
 
 ## Claude Code uniquement
 
-Ce skill a besoin du disque et du Python de l'utilisateur. Si tu n'es pas Claude Code (claude.ai sur le web, onglet Chat de Claude Desktop, Cowork, application mobile), **n'exécute rien** : réponds en une phrase que le dessin d'explique-moi-claude ne fonctionne que dans Claude Code (terminal, VS Code ou onglet Code de Claude Desktop).
+Ce skill a besoin du disque et du Python de l'utilisateur. Si tu n'es pas Claude Code (claude.ai sur le web, onglet Chat de Claude Desktop, Cowork, application mobile), **n'exécute rien** : réponds en une phrase que le dessin d'explique-moi-claude ne fonctionne que dans Claude Code (terminal, VS Code, Cursor ou onglet Code de Claude Desktop).
 
 ## Outils et réglages
 

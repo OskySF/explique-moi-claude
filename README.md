@@ -6,7 +6,7 @@ Tu dis **« explique-moi »**, et Claude transforme ce qu'il vient de faire en u
 
 ![Exemple de dessin](examples/dessin-exemple.png)
 
-> **Claude Code uniquement** : terminal, extension VS Code ou onglet « Code » de Claude Desktop. Le skill ne fonctionne pas dans claude.ai, dans l'onglet Chat de Claude Desktop ni dans Cowork. Il a besoin de ton disque et de Python, et il refuse poliment de s'y lancer.
+> **Claude Code uniquement** : terminal, extension Claude Code dans VS Code ou Cursor, ou onglet « Code » de Claude Desktop. Le skill ne fonctionne pas dans claude.ai, dans l'onglet Chat de Claude Desktop ni dans Cowork. Il a besoin de ton disque et de Python, et il refuse poliment de s'y lancer.
 
 ## Utilisation
 
@@ -23,9 +23,9 @@ Rien ne se déclenche tout seul : pas de fiche ni de dessin sans demande.
 
 Une vraie fiche produite par le skill, sur le skill lui-même : « explique-moi ce que fait explique-moi-claude, de A à Z ».
 
-[![Aperçu de la fiche d'exemple](examples/fiche-recap/apercu.png)](examples/fiche-recap/cahier/fiches/2026-09-27-2240-explique-moi-claude-de-a-a-z.html)
+[![Aperçu de la fiche d'exemple](examples/fiche-recap/apercu.png)](examples/fiche-recap/cahier/fiches/2026-09-27-2244-explique-moi-claude-de-a-a-z.html)
 
-- La fiche complète : [`examples/fiche-recap/cahier/fiches/2026-09-27-2240-explique-moi-claude-de-a-a-z.html`](examples/fiche-recap/cahier/fiches/2026-09-27-2240-explique-moi-claude-de-a-a-z.html)
+- La fiche complète : [`examples/fiche-recap/cahier/fiches/2026-09-27-2244-explique-moi-claude-de-a-a-z.html`](examples/fiche-recap/cahier/fiches/2026-09-27-2244-explique-moi-claude-de-a-a-z.html)
 - Le cahier qui va avec : le [sommaire](examples/fiche-recap/cahier/index.html) et le [lexique](examples/fiche-recap/cahier/lexique.html)
 - Ce que Claude écrit avant la mise en page : [`fiche.json`](examples/fiche-recap/fiche.json), et le [dessin](examples/fiche-recap/dessin.png)
 

@@ -41,9 +41,10 @@
     {"risque": "Sans connexion internet, les fiches s'affichent avec une police ordinaire au lieu de l'écriture manuscrite.", "probabilite": "Honnêtement, ça arrivera sûrement un jour, mais c'est sans gravité : le texte et le dessin restent là."}
   ],
   "lexique": [
-    {"terme": "Claude Code", "definition": "La version de Claude qui travaille directement sur ton ordinateur : dans le terminal, dans VS Code ou dans l'onglet Code de Claude Desktop.", "image": "Un artisan qui vient chez toi, au lieu de te répondre au téléphone."},
+    {"terme": "Claude Code", "definition": "La version de Claude qui travaille directement sur ton ordinateur : dans le terminal, dans VS Code, dans Cursor ou dans l'onglet Code de Claude Desktop.", "image": "Un artisan qui vient chez toi, au lieu de te répondre au téléphone."},
     {"terme": "terminal", "definition": "Une fenêtre où l'on tape des commandes en texte au lieu de cliquer.", "image": "Le guichet où l'on parle directement à l'ordinateur."},
     {"terme": "VS Code", "definition": "Un logiciel gratuit pour écrire et modifier du code, dans lequel Claude Code peut s'installer.", "image": "L'établi de l'atelier."},
+    {"terme": "Cursor", "definition": "Un éditeur de code construit à partir de VS Code, dans lequel l'extension Claude Code s'installe aussi.", "image": "Un établi d'une autre marque, avec les mêmes outils."},
     {"terme": "skill", "definition": "Un dossier de consignes et d'outils que Claude Code sait utiliser, avec sa propre commande.", "image": "Une fiche recette rangée dans la cuisine de Claude."},
     {"terme": "commande /", "definition": "Un mot qui commence par `/` et lance une action précise dans Claude Code, comme `/explique-moi-claude`.", "image": "Un bouton d'ascenseur : tu appuies, ça part."},
     {"terme": "/reload-skills", "definition": "La commande qui demande à Claude Code de relire les skills sans redémarrer.", "image": "Rallumer la lumière de l'atelier pour voir le nouvel outil."},

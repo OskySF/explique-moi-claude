@@ -11,7 +11,7 @@ Transforme ce qui vient d'être fait dans la conversation (ou le sujet que l'uti
 
 ## Claude Code uniquement
 
-Ce skill écrit sur le disque de l'utilisateur et lance Python. Si tu n'es pas Claude Code (claude.ai sur le web, onglet Chat de Claude Desktop, Cowork, application mobile), **n'exécute rien** : réponds en une phrase qu'explique-moi-claude ne fonctionne que dans Claude Code (terminal, VS Code ou onglet Code de Claude Desktop).
+Ce skill écrit sur le disque de l'utilisateur et lance Python. Si tu n'es pas Claude Code (claude.ai sur le web, onglet Chat de Claude Desktop, Cowork, application mobile), **n'exécute rien** : réponds en une phrase qu'explique-moi-claude ne fonctionne que dans Claude Code (terminal, VS Code, Cursor ou onglet Code de Claude Desktop).
 
 ## Quand l'utiliser
 

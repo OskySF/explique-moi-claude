@@ -4,18 +4,18 @@
    "titre": "explique-moi-claude, de A à Z",
    "projet": "explique-moi-claude",
    "phrase": "Tu as installé un skill qui transforme, sur simple demande, ce que Claude vient de faire en fiche de cours illustrée, rangée dans ton cahier avec un sommaire et un lexique.",
-   "date": "27 septembre 2026 à 22h40",
-   "fichier": "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
-   "image": "fiches/images/2026-09-27-2240-explique-moi-claude-de-a-a-z.png"
+   "date": "27 septembre 2026 à 22h44",
+   "fichier": "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
+   "image": "fiches/images/2026-09-27-2244-explique-moi-claude-de-a-a-z.png"
   }
  ],
  "lexique": {
   "Claude Code": {
-   "definition": "La version de Claude qui travaille directement sur ton ordinateur : dans le terminal, dans VS Code ou dans l'onglet Code de Claude Desktop.",
+   "definition": "La version de Claude qui travaille directement sur ton ordinateur : dans le terminal, dans VS Code, dans Cursor ou dans l'onglet Code de Claude Desktop.",
    "image": "Un artisan qui vient chez toi, au lieu de te répondre au téléphone.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -25,7 +25,7 @@
    "image": "Le guichet où l'on parle directement à l'ordinateur.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -35,7 +35,17 @@
    "image": "L'établi de l'atelier.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
+     "explique-moi-claude, de A à Z"
+    ]
+   ]
+  },
+  "Cursor": {
+   "definition": "Un éditeur de code construit à partir de VS Code, dans lequel l'extension Claude Code s'installe aussi.",
+   "image": "Un établi d'une autre marque, avec les mêmes outils.",
+   "vu_dans": [
+    [
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -45,7 +55,7 @@
    "image": "Une fiche recette rangée dans la cuisine de Claude.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -55,7 +65,7 @@
    "image": "Un bouton d'ascenseur : tu appuies, ça part.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -65,7 +75,7 @@
    "image": "Rallumer la lumière de l'atelier pour voir le nouvel outil.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -75,7 +85,7 @@
    "image": "Le cahier des charges punaisé au-dessus de la presse.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -85,7 +95,7 @@
    "image": "La notice de la presse à dessins.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -95,7 +105,7 @@
    "image": "Une bibliothèque en ligne où chacun peut emprunter un projet.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -105,7 +115,7 @@
    "image": "Le classeur complet d'un projet.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -115,7 +125,7 @@
    "image": "Photocopier le classeur de la bibliothèque pour l'avoir chez toi.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -125,7 +135,7 @@
    "image": "Aller chercher les nouvelles pages et les glisser dans ton classeur.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -135,7 +145,7 @@
    "image": "Une page de magazine que n'importe quel lecteur sait afficher.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -145,7 +155,7 @@
    "image": "Un formulaire rempli case par case.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -155,7 +165,7 @@
    "image": "Le moteur de la presse.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -165,7 +175,7 @@
    "image": "Un robot de cuisine réglé pour une seule recette.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -175,7 +185,7 @@
    "image": "Le pinceau et les tampons de l'atelier.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -185,7 +195,7 @@
    "image": "L'imprimerie du quartier qui imprime tes croquis.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -195,7 +205,7 @@
    "image": "L'illustrateur que l'imprimerie met à ton service.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -205,7 +215,7 @@
    "image": "La commande passée au dessinateur.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -215,7 +225,7 @@
    "image": "Ton numéro de client.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -225,7 +235,7 @@
    "image": "Le badge qui ouvre la porte de l'imprimerie : on ne le prête à personne.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -235,7 +245,7 @@
    "image": "Un forfait de photocopies qui se recharge chaque nuit.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -245,7 +255,7 @@
    "image": "L'horloge de la gare centrale sur laquelle toutes les autres se règlent.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -255,7 +265,7 @@
    "image": "La fiche de réglages scotchée sous la presse.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -265,7 +275,7 @@
    "image": "L'étagère où tu poses ton classeur.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -275,7 +285,7 @@
    "image": "Le tiroir fermé à clé que personne n'emporte.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -285,7 +295,7 @@
    "image": "La table des matières de ton classeur.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -295,7 +305,7 @@
    "image": "Ton répertoire de vocabulaire qui grossit à chaque cours.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
@@ -305,7 +315,7 @@
    "image": "L'acteur muet de chaque fiche.",
    "vu_dans": [
     [
-     "2026-09-27-2240-explique-moi-claude-de-a-a-z.html",
+     "2026-09-27-2244-explique-moi-claude-de-a-a-z.html",
      "explique-moi-claude, de A à Z"
     ]
    ]
