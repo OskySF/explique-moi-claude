@@ -60,7 +60,7 @@ Tape enfin `/explique-moi-claude` ou dis « explique-moi ». Si la commande n'ap
 
 Si tu es une IA à qui l'on demande d'installer (ou de mettre à jour) explique-moi-claude :
 
-1. **Vérifie que tu es Claude Code** (CLI, VS Code ou onglet Code de Claude Desktop). Sinon, n'installe rien. Explique à l'utilisateur que ce skill ne fonctionne que dans Claude Code, et ne propose **pas** de l'ajouter à claude.ai, au Chat ou à Cowork.
+1. **Vérifie que tu es Claude Code** (CLI, Cursor, VS Code ou onglet Code de Claude Desktop). Sinon, n'installe rien. Explique à l'utilisateur que ce skill ne fonctionne que dans Claude Code, et ne propose **pas** de l'ajouter à claude.ai, au Chat ou à Cowork.
 2. Vérifie Python 3 et Pillow (`python -c "import PIL"`). Si Pillow manque, propose `python -m pip install pillow`.
 3. Le dossier d'installation est `~/.claude/skills/explique-moi-claude` (dans le dossier personnel de l'utilisateur ; sous Windows, `C:\Users\<nom>\.claude\skills\explique-moi-claude`). Note si `~/.claude/skills` existe déjà.
    - S'il contient déjà `SKILL.md`, c'est une mise à jour : `git -C "$HOME/.claude/skills/explique-moi-claude" pull`.
