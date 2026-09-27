@@ -1,0 +1,7 @@
+{
+  "dossier_cours": "~/Documents/Explique-moi Claude",
+  "cloudflare": {
+    "account_id": "ton-identifiant-de-compte-cloudflare",
+    "api_token": "ton-jeton-api-avec-permission-workers-ai"
+  }
+}

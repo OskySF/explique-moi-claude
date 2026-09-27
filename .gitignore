@@ -1,0 +1,17 @@
+# Données personnelles (jamais publiées)
+Cours/
+_archives/
+
+# Secrets et réglages locaux (config.json vit dans le dossier du skill installé : jamais publié)
+**/config.json
+**/cloudflare.json
+.env
+
+# Fichiers générés par Python
+__pycache__/
+*.pyc
+
+# Déchets Windows / Mac
+desktop.ini
+Thumbs.db
+.DS_Store

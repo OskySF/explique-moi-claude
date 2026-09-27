@@ -1,0 +1,30 @@
+{
+  "titre": "Mettre son projet sous Git",
+  "projet": "mon-site",
+  "phrase": "On a demandé à Git de prendre une « photo » du projet à chaque étape importante, pour pouvoir revenir en arrière si quelque chose casse.",
+  "illustration": "dessin-exemple.png",
+  "legende": "Xiaohei photographie le projet et range chaque photo dans l'historique",
+  "image": [
+    "Imagine que ton projet est un carton rempli de papiers que tu modifies tous les jours. Sans Git, si tu abîmes une page, l'ancienne version est perdue.",
+    "Avec Git, tu as un appareil photo. Quand une étape est finie, tu fais **clic** : c'est un *commit*. La photo part dans un classeur, rangée avec la date et une petite note (« ajout du menu », « correction du bouton »).",
+    "Le classeur, c'est l'**historique**. Tu peux l'ouvrir à tout moment, retrouver la photo d'hier et remettre le carton exactement dans cet état."
+  ],
+  "changements": [
+    {"avant": "Le dossier `mon-site` n'était qu'un dossier ordinaire.", "apres": "C'est un dépôt Git : un dossier caché `.git` garde toutes les photos.", "pourquoi": "Pour pouvoir revenir en arrière à tout moment."},
+    {"avant": "Aucune version enregistrée.", "apres": "Un premier commit « version de départ » contient tous les fichiers.", "pourquoi": "Il faut une première photo pour avoir un point de retour."}
+  ],
+  "pourquoi": [
+    "On aurait pu copier le dossier à la main (`mon-site-v2`, `mon-site-final`…). Ça marche au début, mais on ne sait vite plus quelle copie est la bonne. Git garde tout dans un seul dossier, avec une note pour chaque étape."
+  ],
+  "a_faire": [
+    "Après chaque étape qui marche, demande un commit avec une note claire."
+  ],
+  "risques": [
+    {"risque": "Un fichier secret (mot de passe, clé) ajouté par erreur reste dans l'historique, même supprimé ensuite.", "probabilite": "Honnêtement, c'est un vrai risque au début, parce qu'on ajoute souvent « tout » d'un coup. Le fichier `.gitignore` sert à l'éviter."}
+  ],
+  "lexique": [
+    {"terme": "Git", "definition": "Un logiciel qui enregistre les versions successives d'un projet.", "image": "Un appareil photo pour ton dossier."},
+    {"terme": "commit", "definition": "Une version enregistrée du projet, avec une note qui dit ce qui a changé.", "image": "Une photo datée rangée dans le classeur."},
+    {"terme": "historique", "definition": "La liste de tous les commits, du plus ancien au plus récent.", "image": "Le classeur de photos."}
+  ]
+}
